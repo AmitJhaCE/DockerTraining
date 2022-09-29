@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <section>
-          <h2>Title for server</h2>
+          <h2>Node App in Docker through NginX</h2>
           <h3>${userGoal}</h3>
         </section>
         <form action="/store-goal" method="POST">

@@ -17,4 +17,4 @@ EXPOSE 80
 
 #Start server
 # Always remember to pass with double quotes
-CMD ["node" "server.js"]
+CMD ["node", "server.js"]

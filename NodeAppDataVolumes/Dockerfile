@@ -1,5 +1,5 @@
 # Get latest version of node app
-FROM node
+FROM node:latest
 
 # Create and change into app directory in container storage
 WORKDIR /app
@@ -16,4 +16,5 @@ COPY . /app
 EXPOSE 80
 
 #Start server
-CMD ['node' 'server.js']
+# Always remember to pass with double quotes
+CMD ["node" "server.js"]

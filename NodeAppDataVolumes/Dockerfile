@@ -15,6 +15,9 @@ COPY . /app
 #Expose port 80 same as server
 EXPOSE 80
 
+#Create Anonymous Volume
+VOLUME ["/app/feedback"]
+
 #Start server
 # Always remember to pass with double quotes
 CMD ["node", "server.js"]

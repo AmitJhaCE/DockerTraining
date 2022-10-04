@@ -36,11 +36,11 @@ app.post('/create', async (req, res) => {
     if (exists) {
       res.redirect('/exists');
     } else {
-      await fs.rename(tempFilePath, finalFilePath);
+      await fs.copyFile(tempFilePath, finalFilePath);
+      await fs.unlink(tempFilePath);
       res.redirect('/');
     }
   });
 });
-console.log('Server running at http://127.0.0.1:80');
 
 app.listen(80);

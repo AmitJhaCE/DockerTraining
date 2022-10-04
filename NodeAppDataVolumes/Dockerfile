@@ -1,5 +1,5 @@
 # Get latest version of node app
-FROM node:latest
+FROM node
 
 # Create and change into app directory in container storage
 WORKDIR /app
